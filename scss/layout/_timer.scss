@@ -10,6 +10,11 @@
   margin-bottom: 3.2rem;
   position: relative;
 
+  @media (max-width: 445px) {
+    width: 20rem;
+    height: 20rem;
+  }
+
   &-time {
     font-size: 5rem;
     font-weight: 700;
@@ -34,4 +39,9 @@
 
   display: grid;
   place-items: center;
+
+  @media (max-width: 445px) {
+    width: 17rem;
+    height: 17rem;
+  }
 }

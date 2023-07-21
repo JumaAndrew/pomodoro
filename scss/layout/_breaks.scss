@@ -1,12 +1,16 @@
 .pomodoro__breaks {
   display: flex;
   justify-content: center;
-  width: 27rem;
+  max-width: 27rem;
   height: 4rem;
   margin: 0 auto;
   border-radius: 2rem;
   background-color: var(--color-dark-bg-1);
   margin-bottom: 4.5rem;
+
+  @media (max-width: 445px) {
+    max-width: 23rem;
+  }
 
   span {
     color: var(--color-primary-text);
@@ -16,6 +20,10 @@
     align-self: center;
     cursor: pointer;
     border-radius: 2.25rem;
+
+    @media (max-width: 445px) {
+      font-size: 0.8rem;
+    }
   }
 }
 
