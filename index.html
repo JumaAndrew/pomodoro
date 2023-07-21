@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;700&family=Roboto+Slab:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="index.js"></script>
+    <title>Frontend Mentor | Pomodoro app</title>
+  </head>
+  <body>
+    <p class="heading">pomodoro</p>
+    <div class="pomodoro__breaks">
+      <span class="active pomodoro" data-pomodoro="1">pomodoro</span>
+      <span class="shortBreak" data-pomodoro="2">short break</span>
+      <span class="longBreak" data-pomodoro="3">long break</span>
+    </div>
+    <div class="pomodoro__timer">
+      <div class="inner__timer">
+        <span class="pomodoro__timer-time"></span>
+        <span class="pomodoro__timer-control" data-control="start"></span>
+      </div>
+    </div>
+    <!-- <button data-control="start">start</button> -->
+    <div class="settings hidden">
+      <div class="settings__header">
+        <p class="settings__heading">Settings</p>
+        <img src="assets/close-icon.svg" alt="" class="close-icon icon" />
+      </div>
+      <div class="settings__time settings_container">
+        <p class="heading-tertiary">Time (minutes)</p>
+        <div class="settings__time-custom">
+          <div class="settings__time-custom--type">
+            <span class="">pomodoro</span>
+            <input type="number" id="pomodoroInput" min="0" />
+          </div>
+          <div class="settings__time-custom--type">
+            <span class="">short break</span>
+            <input type="number" id="shortBreakInput" min="0" />
+          </div>
+          <div class="settings__time-custom--type">
+            <span class="">long break</span>
+            <input type="number" id="longBreakInput" min="0" />
+          </div>
+        </div>
+      </div>
+      <div class="settings__font settings_container flex">
+        <p class="heading-tertiary">Font</p>
+        <div class="settings__font-types">
+          <div class="font active settings__circle" data-font="1">Aa</div>
+          <div class="font settings__circle" data-font="2">Aa</div>
+          <div class="font settings__circle" data-font="3">Aa</div>
+        </div>
+      </div>
+      <div class="settings__color settings_container flex">
+        <p class="heading-tertiary">Color</p>
+        <div class="settings__color-types">
+          <div class="color active settings__circle" data-color="1"></div>
+          <div class="color settings__circle" data-color="2"></div>
+          <div class="color settings__circle" data-color="3"></div>
+        </div>
+        <button class="settings__button" id="apply">Apply</button>
+      </div>
+    </div>
+    <img class="settings__icon icon" src="assets/icon-settings.svg" alt="" />
+    <div class="overlay hidden"></div>
+  </body>
+</html>

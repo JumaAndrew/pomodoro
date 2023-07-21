@@ -1,0 +1,19 @@
+.heading {
+  color: var(--color-primary-text);
+  text-align: center;
+  // font-family: var(--ff-primary);
+  font-family: sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.heading-tertiary {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}

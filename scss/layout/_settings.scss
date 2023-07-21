@@ -1,0 +1,151 @@
+.settings {
+  width: 35rem;
+  background-color: var(--color-white);
+  margin: 0 auto;
+  border-radius: 2rem;
+  position: absolute;
+  top: 20%;
+  right: 50%;
+  transform: translateX(50%);
+  z-index: 999;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    border-bottom: 1px solid var(--color-primary-text);
+  }
+
+  &__heading {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+
+  &__icon {
+    margin: 0 auto;
+    width: 1.8rem;
+  }
+
+  &__time {
+    p {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__time-custom {
+    display: flex;
+    gap: 2rem;
+
+    &--type {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      span {
+        font-weight: 600;
+        color: #bbb;
+      }
+
+      input {
+        font-size: inherit;
+        width: 7rem;
+        height: 2.8rem;
+        padding-left: 1rem;
+        border-radius: 0.4rem;
+        font-weight: 600;
+        border: none;
+        background-color: var(--color-light-3);
+      }
+    }
+  }
+
+  &__font {
+    &-types {
+      display: flex;
+      gap: 1.5rem;
+    }
+  }
+
+  &__color {
+    position: relative;
+
+    &-types {
+      display: flex;
+      gap: 1.5rem;
+    }
+  }
+
+  &__button {
+    color: var(--color-white);
+    font-size: 1rem;
+    background-color: var(--color-primary-bg);
+    padding: 1rem 3rem;
+    position: absolute;
+    border-radius: 2rem;
+    border: none;
+    right: 37%;
+    bottom: -20%;
+  }
+}
+
+.settings_container {
+  padding: 1.5rem 0;
+  width: 90%;
+  margin: 0 auto;
+  border-bottom: 1px solid var(--color-primary-text);
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.settings__circle {
+  cursor: pointer;
+  font-size: 0.8rem;
+  width: 3rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.font {
+  background-color: var(--color-light-3);
+
+  &:nth-child(1) {
+    font-family: 'Kumbh Sans', sans-serif;
+  }
+
+  &:nth-child(2) {
+    font-family: var(--ff-secondary);
+  }
+
+  &:nth-child(3) {
+    font-family: var(--ff-tertiary);
+  }
+}
+
+.font.active {
+  color: var(--color-white);
+  background-color: #000;
+}
+
+.color {
+  &:nth-child(1) {
+    background-color: hsl(0, 91%, 71%);
+  }
+
+  &:nth-child(2) {
+    background-color: var(--color-secondary-bg);
+  }
+
+  &:nth-child(3) {
+    background-color: var(--color-tertiary-bg);
+  }
+}
+
+.icon {
+  cursor: pointer;
+}
